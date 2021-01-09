@@ -8,7 +8,7 @@ defmodule KVServer.Application do
     children = [
       {Task.Supervisor, name: KVServer.TaskSupervisor},
       Supervisor.child_spec(
-        {Task, fn -> KVServer.accept(8080) end},
+        {Task, fn -> KVServer.accept(4040) end},
         restart: :permanent
       )
     ]
