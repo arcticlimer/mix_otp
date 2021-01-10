@@ -1,9 +1,5 @@
 defmodule KV.RegistryServer do
-  @moduledoc """
-  Server for KV.Registry.
-
-  This module is not meant to be manually used.
-  """
+  @moduledoc false
   use GenServer
 
   @impl true
